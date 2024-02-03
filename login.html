@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script language="javascript">
+            function check()
+            {
+                var x,y;
+                x=frm.nm1.value;
+                y=frm.nm2.value;
+                if(x==""|| y=="")
+                {
+                    alert("no field can be blank")
+                    return false;
+
+                }
+                if(x=="ram" && y=="123")
+                {
+                    alert("correct user");
+                    return true;
+                }
+                else
+                {
+                    alert("incorrect user");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frm" onsubmit="return check();" method="get" action="true.html">
+            enter name<input type="text" name="nm1" size=20><br>
+            password <input type="password" name="nm2" size=20><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
